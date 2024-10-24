@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100;0,100..400;1,100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Playwrite GB S", serif;
+
+    .box1{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #D1DCE7;
+
+        .input-box{
+
+            p{
+                font-size: 2rem;
+                text-align: center;
+                font-weight: 900;
+            }
+
+            #textArea{
+                padding: 20px;
+                font-size: 1rem;
+                border: none;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                border-radius: 10px;
+                outline: none;
+
+            }
+        }
+        .color{
+                display: flex;
+                gap: 10px;
+            p{
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+        }
+
+        .button{
+            display: flex;
+            gap: 20px;
+            #add{
+                /* border: 2px solid black; */
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 10px;
+                /* border: none; */
+                font-size: 1rem;
+                font-weight: 700;
+                background-color: green;
+                color: white;
+            }
+            #removal{
+                /* border: 2px solid black; */
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 10px;
+                /* border: none; */
+                font-size: 1rem;
+                font-weight: 700;
+                background-color: red;
+                color: black;
+            }
+        }
+    }
+    .box2{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .head{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        #items{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+    }
+}
